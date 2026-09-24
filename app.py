@@ -14,7 +14,9 @@ def onas():
 def kont():
     return "eeeee, nie mam zbytnio kontaktów"
 
-
+@app.route("/regulamin")
+def reg():
+    return "Tutaj 0 prostych zasad."
 
 if __name__ == "__main__":
     app.run(debug=True)
