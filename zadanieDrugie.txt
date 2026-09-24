@@ -1,0 +1,29 @@
+Aktualny kod przed zmianą:
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "Hello world"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+Kod po zmianie:
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return "Nikodem"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+Odp: Po odświeżeniu strony zmienił się tekst ,,Hello world" na ,,Nikodem", zadziałało ponieważ gdy coś zmieniamy względem tekstu czyli w return to automatycznie serwer się aktulizuje i dostosuwuje się do zmian 
+
+Nie wiem czy moja odpowiedź jest w 100% poprawna gdyż mam wtyczkę do Visual Studio code że jak coś pisze to automatycznie zapisuje, choć wątpię żeby to miało jakąkolwiek inerwencje z tym więc mam nadzieje że moja odpowiedź jest poprawna.
