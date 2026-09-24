@@ -18,5 +18,9 @@ def kont():
 def reg():
     return "Tutaj 0 prostych zasad."
 
+@app.route("/admin")
+def admin():
+    return "Brak dostępu", 403
+
 if __name__ == "__main__":
     app.run(debug=True)
