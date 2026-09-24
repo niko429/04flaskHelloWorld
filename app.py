@@ -26,5 +26,9 @@ def admin():
 def api():
     return {"ok": True, "wersja": "0.1"}
 
+@app.route("/test")
+def test():
+    return "Jestem tekstem który powinien być na stronie :D"
+
 if __name__ == "__main__":
     app.run(debug=True)
