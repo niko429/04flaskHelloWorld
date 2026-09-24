@@ -22,5 +22,9 @@ def reg():
 def admin():
     return "Brak dostępu", 403
 
+@app.route("/api/info")
+def api():
+    return {"ok": True, "wersja": "0.1"}
+
 if __name__ == "__main__":
     app.run(debug=True)
